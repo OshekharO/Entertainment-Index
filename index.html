@@ -21,34 +21,6 @@
     <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <script type="text/javascript">
-      if(top != self) top.location.replace(location);
-      function openform() {document.getElementById('feedbackForm').style.display='block';document.getElementById('feedbackFrame').src='https://contact.unblocked/ubform.php';document.getElementById('feedbackBtn').style.display='none';}
-      function closeform(){document.getElementById('feedbackForm').style.display='none';document.getElementById('feedbackBtn').style.display='block';}
-      function getParameterByName(name) {
-        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-        results = regex.exec(location.search);
-        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-      }
-      window.onload = function(){
-        var domain = getParameterByName('domain');
-        if (domain){
-          if(domain.match('extratorrent')){
-            document.getElementById('noticeContainer').style.display='block';document.getElementById('noticeContainer').innerHTML = '<div class="alert" style="width:100%"><h2>Extratorrent has closed down 😔</h2>There are many alternatives available below<br>Read more about the closure <a href="https://torrentfreak.com/extratorrent-shuts-down-for-good-170517/" title="Extratorrent shuts down" target="_blank">here</a>.</div>';
-          }
-          if(domain.match('rarbg')){
-            document.getElementById('noticeContainer').style.display='block';document.getElementById('noticeContainer').innerHTML = '<div class="alert" style="width:100%"><h2>The Rarbg proxy is currently having issues</h2>We are trying to resolve the issue with the Rarbg admins and are not sure when it will be fixed. In the meantime, try using another site below. Sorry for the inconvenience!</div>';
-          }
-          else if(domain.match('unblocked')&&!domain.match('extratorrent')||domain.match('pirateproxy')){
-            var domain = domain.replace('http','https');var status = getParameterByName('status');var request=getParameterByName('request');document.getElementById('noticeContainer').style.display='block';document.getElementById('noticeContainer').innerHTML = '<div class="alert" style="width:100%;padding-top:14px;"><span style="color:#d71616;font-weight:bold;">Error: </span><span style="font-weight:bold">'+domain+'</span> seems to be down<br><span style="font-size:16px"><a href="'+domain+request+'" title="Try URL again">Click here to try again</a> or pick another site (Error '+status+')</span></div>';
-          }
-          else if(domain.match('unblckd')){
-            var status = getParameterByName('status');var request=getParameterByName('request');document.getElementById('noticeContainer').style.display='block';document.getElementById('noticeContainer').innerHTML = '<div class="alert" style="width:100%;padding-top:14px;"><span style="color:#d71616;font-weight:bold;">Error: </span><span style="font-weight:bold">'+domain+'</span> seems to be down<br><span style="font-size:16px"><a href="'+domain+request+'" title="Try URL again">Click here to try again</a> or pick another site (Error '+status+')</span></div>';
-          }
-        }
-      }
-    </script>
   </head>
   <body>
     <div class="container">
@@ -63,7 +35,7 @@
           <a href="#Manga">MANGA</a>
           <a href="#LN">NOVEL</a>
           <a href="#App">APP</a>
-          <a href="#Adult">NSFW</a>
+          <a href="#Adult">ADULT</a>
         </p>
       </div>
       <div class="alert" id="updates" style="display:none">
@@ -325,7 +297,7 @@
           <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href=""><img src="">&nbsp;</a></div>
         </div>
 
-        <h4 id="books"><img src="img/books.png"> Book Downloads <img src="img/books.png"></h4>
+        <h4 id="Adult"><img src="img/books.png"> Book Downloads <img src="img/books.png"></h4>
         <div class="row">
           <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href=""><img src="">&nbsp;</a></div>
           <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href=""><img src="">&nbsp;</a></div>
