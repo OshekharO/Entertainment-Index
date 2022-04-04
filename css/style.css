@@ -2,7 +2,6 @@ body {font-family: "Courier New", Courier, monospace;background-color:#ffffff;co
 header {text-align: center;}
 a {color:#fff;}
 h4 {font-size:24px;font-weight:bold;margin-bottom: 10px;margin-top:25px;}
-h4 img {width:24px;height:24px;vertical-align: top;}
 .listrows {margin-left:40px;margin-right:40px;padding-top:0px;}
 .col-md-3 {padding-left:8px;padding-right:8px;}
 .btn{color:#fff;background: rgb(121, 121, 121);background: rgba(0, 0, 0, 1);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#797979, endColorstr=#797979);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#797979, endColorstr=#797979)";font-size:16px;}
@@ -26,9 +25,8 @@ h4 img {width:24px;height:24px;vertical-align: top;}
   border-radius: .25rem;
 }
 .img {
-   height: 100px;
-   width: 100px;
-   border-radius: 12px;
+   height: 20px;
+   width: 20px;
     }
 .alert ul {margin:0;list-style-position: inside;}
 .alert a {text-decoration:underline}
