@@ -25,6 +25,11 @@ h4 img {width:24px;height:24px;vertical-align: top;}
   margin-top: 5px;
   border-radius: .25rem;
 }
+.img {
+   height: 100px;
+   width: 100px;
+   border-radius: 12px;
+    }
 .alert ul {margin:0;list-style-position: inside;}
 .alert a {text-decoration:underline}
 #quickMenu {width:40%;margin-top:0px;padding-left:5px;padding-right:5px;}
