@@ -1,4 +1,4 @@
-# Piracy Index
+## Entertainment Index
 
 Get recommended site's to watch / read movie, series, Anime, Manga, light Novel, Etc. Also Some Application To browse these contents.
 
