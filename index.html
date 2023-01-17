@@ -1,466 +1,1107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="title" content="Piracy Index">
-  <meta name="description" content="A simple website indexer with some awesome site listed. Now find your favourite websites and application's easily. One destination for everything.">
-  <meta name="keywords" content="manga, read manga online, free manga online, English manga, manga scans, watch anime, watch movies, application, read free manga and light novel, Chinese novel, mtl, library, manhua, NSFW, App, hosting, index, awesome, oshekher, puritywashere, course, downloader, YouTube, vanced alternative, music player, website, hentai, Doujins, 18+, porn, OshekharO, Saksham Shekher, feilu, faloo, 飞卢中文网, 飞卢小说, youtube alternative">
-  <meta name="robots" content="index, follow">
-  <meta name="language" content="English">
-  <meta name="author" content="Saksham">
-  <meta property="og:url" content="/">
-  <meta property="og:image" content="https://rawcdn.githack.com/OshekharO/Entertainment-Index/17d005915d5e20780a46aef227f08367ca8efb3a/img/apple-touch-icon.png">
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:type" content="website" />
-  <meta name="copyright" content="Copyright © 2022 OshekharO" />
-  <meta property="og:image" content="https://rawcdn.githack.com/OshekharO/Entertainment-Index/17d005915d5e20780a46aef227f08367ca8efb3a/img/android-chrome-512x512.png" />
-  <link rel="shortcut icon" href="https://rawcdn.githack.com/OshekharO/Entertainment-Index/17d005915d5e20780a46aef227f08367ca8efb3a/img/favicon.ico" type="image/x-icon" />
-  <link rel="apple-touch-icon" sizes="180x180" href="https://rawcdn.githack.com/OshekharO/Entertainment-Index/17d005915d5e20780a46aef227f08367ca8efb3a/img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" href="https://rawcdn.githack.com/OshekharO/Entertainment-Index/17d005915d5e20780a46aef227f08367ca8efb3a/img/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="https://github.com/OshekharO/Entertainment-Index/blob/master/img/favicon-16x16.png" sizes="16x16">
-  <link href="https://rawcdn.githack.com/OshekharO/Entertainment-Index/17d005915d5e20780a46aef227f08367ca8efb3a/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://rawcdn.githack.com/OshekharO/Entertainment-Index/17d005915d5e20780a46aef227f08367ca8efb3a/css/style.css" rel="stylesheet">
-  <title>Entertainment Index</title>
-  </head>
-  <body>
-    <div class="container">
-      <div id="noticeContainer"></div>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<meta name="title" content="Piracy Index" />
+<meta name="description" content="A simple website indexer with some awesome site listed. Now find your favourite websites and application's easily. One destination for everything." />
+<meta
+name="keywords"
+content="manga, read manga online, free manga online, English manga, manga scans, watch anime, watch movies, application, read free manga and light novel, Chinese novel, mtl, library, manhua, NSFW, App, hosting, index, awesome, oshekher, puritywashere, course, downloader, YouTube, vanced alternative, music player, website, hentai, Doujins, 18+, porn, OshekharO, Saksham Shekher, feilu, faloo, 飞卢中文网, 飞卢小说, youtube alternative"
+/>
+<meta name="robots" content="index, follow" />
+<meta name="language" content="English" />
+<meta name="author" content="Saksham" />
+<meta property="og:url" content="/" />
+<meta property="og:image" content="https://rawcdn.githack.com/OshekharO/Entertainment-Index/17d005915d5e20780a46aef227f08367ca8efb3a/img/apple-touch-icon.png" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta name="copyright" content="Copyright © 2022 OshekharO" />
+<meta property="og:image" content="https://rawcdn.githack.com/OshekharO/Entertainment-Index/17d005915d5e20780a46aef227f08367ca8efb3a/img/android-chrome-512x512.png" />
+<link rel="shortcut icon" href="https://rawcdn.githack.com/OshekharO/Entertainment-Index/17d005915d5e20780a46aef227f08367ca8efb3a/img/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" sizes="180x180" href="https://rawcdn.githack.com/OshekharO/Entertainment-Index/17d005915d5e20780a46aef227f08367ca8efb3a/img/apple-touch-icon.png" />
+<link rel="icon" type="image/png" href="https://rawcdn.githack.com/OshekharO/Entertainment-Index/17d005915d5e20780a46aef227f08367ca8efb3a/img/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="https://github.com/OshekharO/Entertainment-Index/blob/master/img/favicon-16x16.png" sizes="16x16" />
+<link href="https://rawcdn.githack.com/OshekharO/Entertainment-Index/17d005915d5e20780a46aef227f08367ca8efb3a/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://rawcdn.githack.com/OshekharO/Entertainment-Index/17d005915d5e20780a46aef227f08367ca8efb3a/css/style.css" rel="stylesheet" />
+<title>Entertainment Index</title>
+</head>
+<body>
+<div class="container">
+<div id="noticeContainer"></div>
 
-      <div id="quickMenu" class="alert">
-        <span style="font-size:18px;">Index</span>
-        <p>
-          <a href="#Movie">MOVIE</a>
-          <a href="#Anime">ANIME</a>
-          <a href="#Manga">MANGA</a>
-          <a href="#LN">NOVEL</a>
-          <a href="#App">APP</a>
-          <a href="#Adult">ADULT</a>
-          <a href="#Torrent">TORRENT</a>
-        </p>
-      </div>
-      <div class="listrows">
-        <h4 id="Movie"> ★彡[MOVIES & SERIES]彡★ </h4>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://ecinema.ml"><img src="https://ik.imagekit.io/nap/eCinema/eCinema_Logo_X2vcmwMm4.png">&nbsp;Ecinema</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://dopebox.cc"><img src="https://dopebox.cc/wp-content/themes/dopebox/images/logo.png">&nbsp;Dopebox</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://prmovies.tel"><img src="https://prmovies.tel/wp-content/uploads/2022/10/cropped-images-1-3-8-1-1-1-1-1-1.png">&nbsp;Prmovies</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://flixtor.video"><img src="https://s1.bunnycdn.ru/assets/sites/flixtor/logo.png">&nbsp;Flixtor</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://olgply.com"><img src="https://olgply.com/favicon.ico">&nbsp;Olgply</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://kisstvshow.to/"><img src="https://kisstvshow.to/Content/images/favicon.ico">&nbsp;KissTvShow</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://khatrimazaful.org"><img src="https://khatrimazaful.net/wp-content/uploads/2022/03/km.net_.png">&nbsp;Khatrimazaful</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://movie.squeezebox.dev"><img src="https://movie.squeezebox.dev/favicon.ico">&nbsp;Squeezebox</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://cloudy.cfd"><img src="https://cloudy.cfd/wp-content/uploads/2020/10/cloudy-1-1.png">&nbsp;Cloudy</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://moviesverse.app"><img src="https://moviesverse.app/wp-content/uploads/2022/04/moviesverse-202222-1.png">&nbsp;MoviesVerse</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.vmovee.watch"><img src="https://i.ibb.co/Qk5kBsh/apple-touch-icon-152x152-1.png">&nbsp;Vmovee</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://movies2watch.is"><img src="https://img.movies2watch.is/xxrz/400x400/100/46/a5/46a552ee6b3480c54c33f3e7f0862a6b/46a552ee6b3480c54c33f3e7f0862a6b.png">&nbsp;Movies2Watch</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://m4uhd.cc"><img src="https://m4uhd.cc/images/m4uhd.png">&nbsp;M4UHD</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://filmyzilla.help"><img src="https://filmyzilla.makeup/templates/images/favicon.ico">&nbsp;Filmyzilla</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.privatehd.xyz"><img src="https://www.privatehd.xyz/wp-content/uploads/2020/11/PrivateHD-Icon-2.png">&nbsp;Privatehd</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://moviesee.live/"><img src="https://i.ibb.co/L1NN0F7/logo-1.png">&nbsp;Moviesee</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://ww4.cinevez.cc"><img src="https://i.ibb.co/NZzqgF5/logo-1.png">&nbsp;Cinevez</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://fmovies.to"><img src="https://s1.bunnycdn.ru/assets/sites/fmovies/logo2.png">&nbsp;Fmovies</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://sflix.pro"><img src="https://s1.bunnycdn.ru/assets/sites/sflix/logo.png">&nbsp;Sflix</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.watch-movies.com.pk"><img src="https://www.watch-movies.com.pk/wp-content/themes/dramatvpk/images/favicon.ico">&nbsp;Watch Movies</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://uwatchfree.be"><img src="https://i.ibb.co/cD1x0kh/logo-2.png">&nbsp;Uwatchfree</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www34.filmymeet.co"><img src="https://i.ibb.co/FxNVdFq/filmymeet2.jpg">&nbsp;Filmymeet</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://downloadhub.pics"><img src="https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://downloadhub.pics&size=128">&nbsp;Downloadhub</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://8xmovies.lol"><img src="https://8xmovies.bond/wp-content/uploads/2018/06/logo.png.png">&nbsp;8xmovies</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://ww1.ibomma.one"><img src="https://ww1.ibomma.one/wp-content/themes/ibomma-in/images/logo-ibomma.svg">&nbsp;Ibomma</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://dvdplay.cfd"><img src="https://dvdplay.guru/dvdplay-icon.png">&nbsp;Dvdplay</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.foumovies.to"><img src="https://i.ibb.co/b6VJrk4/16117254-260387894381351-1521042809-n.png">&nbsp;Foumovies</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.1tamilmv.hair"><img src="https://www.1tamilmv.hair/uploads/monthly_2021_09/logo.png.d973b0524938777bd7c59457e2196a30.png">&nbsp;1tamilmv</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://moviespapa.cool"><img src="https://moviespapa.green/wp-content/uploads/2022/03/moviespapagreen.png">&nbsp;Moviespapa</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://lookmovie2.to"><img src="https://lookmovie2.to/images/logo1.png">&nbsp;Lookmovie2</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://watchtoday.tv"><img src="https://img.watchtoday.tv/xxrz/400x400/100/7a/96/7a9633ffc3f2a0b9afdd36586c6e27aa/7a9633ffc3f2a0b9afdd36586c6e27aa.png">&nbsp;Watchtoday</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="http://cmovies.vc"><img src="https://cmovies.vc/favicon.ico">&nbsp;Cmovies</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://gimy.app"><img src="https://gimy.app/favicon.ico">&nbsp;Gimy</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://kissasians.org"><img src="https://kissasians.org/images/favicon.ico">&nbsp;Kissasians</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://watchasian.ac"><img src="https://watchasian.ac/wp-content/uploads/2021/10/favicon-1.png">&nbsp;Watchasian</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://onetouchtv.me"><img src="https://cdn.animaapp.com/projects/6215178219a2fd7886bf5a52/releases/621519ce72dadb5503e24f9f/img/logo@1x.png">&nbsp;Onetouchtv</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://dramanice.video"><img src="https://dramanice.video/wp-content/uploads/2019/06/favicon.png">&nbsp;Dramanice</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://yepdrama.com"><img src="https://yepdrama.com/themes/yepdramaV2/images/logo.png">&nbsp;Yepdrama</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://soap2daygo.co"><img src="https://soap2daygo.co/templates/soap2day/images/logo.png">&nbsp;Soap2daygo</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://drama.cx"><img src="https://drama.cx/wp-content/uploads/2021/10/Drama-3.png">&nbsp;drama.cx</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://viewasian.co"><img src="https://viewasian.co/images/favicon.png">&nbsp;Viewasian</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://melomovie.com"><img src="https://melomovie.com/assets/images/logo.png">&nbsp;Melomovie</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://serial4u.tv"><img src="https://serial4u.tv/wp-content/uploads/2021/02/Bepannaah-Ungaurded-2018-Indian-Series-HD-Streaming-with-English-Subtitles_272X400-150x150.jpg">&nbsp;Serial4u</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://cinefunhd.com"><img src="https://cinefunhd.com/wp-content/uploads/2022/03/cinefun.png">&nbsp;cinefunhd</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://flixgo.me"><img src="https://flixgo.me/templates/FlixGo/img/logo.svg">&nbsp;FlixGo</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://5movierulz.mn"><img src="https://5movierulz.mn/wp-content/uploads/2016/10/favicon.ico">&nbsp;7movierulz</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://hdhub4u.onl"><img src="https://hdhub4u.tel/wp-content/uploads/2021/05/hdhub4ulogo.png">&nbsp;Hdhub4u</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://c.filmyhunk.cc"><img src="https://f.filmyhunk.cc/wp-content/uploads/2022/05/filmyhunk-1.png">&nbsp;Filmyhunk</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://moviestowatch.tv"><img src="https://img.moviestowatch.tv/xxrz/400x400/100/93/3a/933abeb77cb61f26ee2d488f3212d3b9/933abeb77cb61f26ee2d488f3212d3b9.png">&nbsp;MoviesToWatch</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://bolly4u.mba"><img src="https://bolly4u.rest/wp-content/uploads/2018/04/Bolly4u.trade_-2.png">&nbsp;Bolly4u</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://allmoviesforyou.net"><img src="https://allmoviesforyou.net/wp-content/uploads/2021/04/cropped-cropped-allmoviesforyou-logo-header-HD.png">&nbsp;AllMoviesForYou</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://asiaflix.app"><img src="https://asiaflix.app/assets/images/logo.svg">&nbsp;Asiaflix</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://icefilms.tv"><img src="https://icefilms.tv/logo.png">&nbsp;IceFilms</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://myflixer.to/"><img src="https://myflixer.to/images/group_1/theme_7/logo.png">&nbsp;MyFlixer</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://5movies.run/"><img src="https://5movies.run/assets/images/5movies/favicon.png">&nbsp;5movies</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www3.hdseries.cc/"><img src="https://img.hdseries.cc/xxrz/300x200/100/c2/bb/c2bb81151301a84ffcfdf4454f7c4cd8/c2bb81151301a84ffcfdf4454f7c4cd8.png">&nbsp;HdSeries</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://hurawatch.at"><img src="https://s1.bunnycdn.ru/assets/sites/hurawatch/logo.png">&nbsp;HuraWatch</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://streamblasters.co"><img src="https://streamblasters.co/wp-content/uploads/2022/05/png-8-e1653159159689.png">&nbsp;StreamBlasters</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.watchfilmy.cc"><img src="https://www.watchfilmy.cc/wp-content/uploads/2020/07/logom-1-e1508260998871-1-1.png">&nbsp;WatchFilmy</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://185.53.88.104/"><img src="https://185.53.88.104/media/2019/05/mkvfa.png">&nbsp;MkvAnime</a></div>
-         </div>
+<div id="quickMenu" class="alert">
+<span style="font-size: 18px;">Index</span>
+<p>
+<a href="#Movie">MOVIE</a>
+<a href="#Anime">ANIME</a>
+<a href="#Manga">MANGA</a>
+<a href="#LN">NOVEL</a>
+<a href="#App">APP</a>
+<a href="#Adult">ADULT</a>
+<a href="#Torrent">TORRENT</a>
+</p>
+</div>
+<div class="listrows">
+<h4 id="Movie">★彡[MOVIES & SERIES]彡★</h4>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://ecinema.ml"><img src="https://ik.imagekit.io/nap/eCinema/eCinema_Logo_X2vcmwMm4.png" />&nbsp;Ecinema</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://dopebox.cc"><img src="https://dopebox.cc/wp-content/themes/dopebox/images/logo.png" />&nbsp;Dopebox</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://prmovies.tel"><img src="https://prmovies.tel/wp-content/uploads/2022/10/cropped-images-1-3-8-1-1-1-1-1-1.png" />&nbsp;Prmovies</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://flixtor.video"><img src="https://s1.bunnycdn.ru/assets/sites/flixtor/logo.png" />&nbsp;Flixtor</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://olgply.com"><img src="https://olgply.com/favicon.ico" />&nbsp;Olgply</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://kisstvshow.to/"><img src="https://kisstvshow.to/Content/images/favicon.ico" />&nbsp;KissTvShow</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://khatrimazaful.org"><img src="https://khatrimazaful.net/wp-content/uploads/2022/03/km.net_.png" />&nbsp;Khatrimazaful</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://movie.squeezebox.dev"><img src="https://movie.squeezebox.dev/favicon.ico" />&nbsp;Squeezebox</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://cloudy.cfd"><img src="https://cloudy.cfd/wp-content/uploads/2020/10/cloudy-1-1.png" />&nbsp;Cloudy</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://moviesverse.app"><img src="https://moviesverse.app/wp-content/uploads/2022/04/moviesverse-202222-1.png" />&nbsp;MoviesVerse</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.vmovee.watch"><img src="https://i.ibb.co/Qk5kBsh/apple-touch-icon-152x152-1.png" />&nbsp;Vmovee</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://movies2watch.is">
+<img src="https://img.movies2watch.is/xxrz/400x400/100/46/a5/46a552ee6b3480c54c33f3e7f0862a6b/46a552ee6b3480c54c33f3e7f0862a6b.png" />&nbsp;Movies2Watch
+</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://m4uhd.cc"><img src="https://m4uhd.cc/images/m4uhd.png" />&nbsp;M4UHD</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://filmyzilla.help"><img src="https://filmyzilla.makeup/templates/images/favicon.ico" />&nbsp;Filmyzilla</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.privatehd.xyz"><img src="https://www.privatehd.xyz/wp-content/uploads/2020/11/PrivateHD-Icon-2.png" />&nbsp;Privatehd</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://moviesee.live/"><img src="https://i.ibb.co/L1NN0F7/logo-1.png" />&nbsp;Moviesee</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://ww4.cinevez.cc"><img src="https://i.ibb.co/NZzqgF5/logo-1.png" />&nbsp;Cinevez</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://fmovies.to"><img src="https://s1.bunnycdn.ru/assets/sites/fmovies/logo2.png" />&nbsp;Fmovies</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://sflix.pro"><img src="https://s1.bunnycdn.ru/assets/sites/sflix/logo.png" />&nbsp;Sflix</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.watch-movies.com.pk"><img src="https://www.watch-movies.com.pk/wp-content/themes/dramatvpk/images/favicon.ico" />&nbsp;Watch Movies</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://uwatchfree.be"><img src="https://i.ibb.co/cD1x0kh/logo-2.png" />&nbsp;Uwatchfree</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www34.filmymeet.co"><img src="https://i.ibb.co/FxNVdFq/filmymeet2.jpg" />&nbsp;Filmymeet</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://downloadhub.pics">
+<img src="https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://downloadhub.pics&size=128" />&nbsp;Downloadhub
+</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://8xmovies.lol"><img src="https://8xmovies.bond/wp-content/uploads/2018/06/logo.png.png" />&nbsp;8xmovies</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://ww1.ibomma.one"><img src="https://ww1.ibomma.one/wp-content/themes/ibomma-in/images/logo-ibomma.svg" />&nbsp;Ibomma</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://dvdplay.cfd"><img src="https://dvdplay.guru/dvdplay-icon.png" />&nbsp;Dvdplay</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.foumovies.to"><img src="https://i.ibb.co/b6VJrk4/16117254-260387894381351-1521042809-n.png" />&nbsp;Foumovies</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.1tamilmv.hair"><img src="https://www.1tamilmv.hair/uploads/monthly_2021_09/logo.png.d973b0524938777bd7c59457e2196a30.png" />&nbsp;1tamilmv</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://moviespapa.cool"><img src="https://moviespapa.green/wp-content/uploads/2022/03/moviespapagreen.png" />&nbsp;Moviespapa</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://lookmovie2.to"><img src="https://lookmovie2.to/images/logo1.png" />&nbsp;Lookmovie2</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://watchtoday.tv">
+<img src="https://img.watchtoday.tv/xxrz/400x400/100/7a/96/7a9633ffc3f2a0b9afdd36586c6e27aa/7a9633ffc3f2a0b9afdd36586c6e27aa.png" />&nbsp;Watchtoday
+</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="http://cmovies.vc"><img src="https://cmovies.vc/favicon.ico" />&nbsp;Cmovies</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://gimy.app"><img src="https://gimy.app/favicon.ico" />&nbsp;Gimy</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://kissasians.org"><img src="https://kissasians.org/images/favicon.ico" />&nbsp;Kissasians</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://watchasian.ac"><img src="https://watchasian.ac/wp-content/uploads/2021/10/favicon-1.png" />&nbsp;Watchasian</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://onetouchtv.me">
+<img src="https://cdn.animaapp.com/projects/6215178219a2fd7886bf5a52/releases/621519ce72dadb5503e24f9f/img/logo@1x.png" />&nbsp;Onetouchtv
+</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://dramanice.video"><img src="https://dramanice.video/wp-content/uploads/2019/06/favicon.png" />&nbsp;Dramanice</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://yepdrama.com"><img src="https://yepdrama.com/themes/yepdramaV2/images/logo.png" />&nbsp;Yepdrama</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://soap2daygo.co"><img src="https://soap2daygo.co/templates/soap2day/images/logo.png" />&nbsp;Soap2daygo</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://drama.cx"><img src="https://drama.cx/wp-content/uploads/2021/10/Drama-3.png" />&nbsp;drama.cx</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://viewasian.co"><img src="https://viewasian.co/images/favicon.png" />&nbsp;Viewasian</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://melomovie.com"><img src="https://melomovie.com/assets/images/logo.png" />&nbsp;Melomovie</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://serial4u.tv">
+<img src="https://serial4u.tv/wp-content/uploads/2021/02/Bepannaah-Ungaurded-2018-Indian-Series-HD-Streaming-with-English-Subtitles_272X400-150x150.jpg" />&nbsp;Serial4u
+</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://cinefunhd.com"><img src="https://cinefunhd.com/wp-content/uploads/2022/03/cinefun.png" />&nbsp;cinefunhd</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://flixgo.me"><img src="https://flixgo.me/templates/FlixGo/img/logo.svg" />&nbsp;FlixGo</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://5movierulz.mn"><img src="https://5movierulz.mn/wp-content/uploads/2016/10/favicon.ico" />&nbsp;7movierulz</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://hdhub4u.onl"><img src="https://hdhub4u.tel/wp-content/uploads/2021/05/hdhub4ulogo.png" />&nbsp;Hdhub4u</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://c.filmyhunk.cc"><img src="https://f.filmyhunk.cc/wp-content/uploads/2022/05/filmyhunk-1.png" />&nbsp;Filmyhunk</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://moviestowatch.tv">
+<img src="https://img.moviestowatch.tv/xxrz/400x400/100/93/3a/933abeb77cb61f26ee2d488f3212d3b9/933abeb77cb61f26ee2d488f3212d3b9.png" />&nbsp;MoviesToWatch
+</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://bolly4u.mba"><img src="https://bolly4u.rest/wp-content/uploads/2018/04/Bolly4u.trade_-2.png" />&nbsp;Bolly4u</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://allmoviesforyou.net">
+<img src="https://allmoviesforyou.net/wp-content/uploads/2021/04/cropped-cropped-allmoviesforyou-logo-header-HD.png" />&nbsp;AllMoviesForYou
+</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://asiaflix.app"><img src="https://asiaflix.app/assets/images/logo.svg" />&nbsp;Asiaflix</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://icefilms.tv"><img src="https://icefilms.tv/logo.png" />&nbsp;IceFilms</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://myflixer.to/"><img src="https://myflixer.to/images/group_1/theme_7/logo.png" />&nbsp;MyFlixer</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://5movies.run/"><img src="https://5movies.run/assets/images/5movies/favicon.png" />&nbsp;5movies</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www3.hdseries.cc/">
+<img src="https://img.hdseries.cc/xxrz/300x200/100/c2/bb/c2bb81151301a84ffcfdf4454f7c4cd8/c2bb81151301a84ffcfdf4454f7c4cd8.png" />&nbsp;HdSeries
+</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://hurawatch.at"><img src="https://s1.bunnycdn.ru/assets/sites/hurawatch/logo.png" />&nbsp;HuraWatch</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://streamblasters.co"><img src="https://streamblasters.co/wp-content/uploads/2022/05/png-8-e1653159159689.png" />&nbsp;StreamBlasters</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.watchfilmy.cc"><img src="https://www.watchfilmy.cc/wp-content/uploads/2020/07/logom-1-e1508260998871-1-1.png" />&nbsp;WatchFilmy</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://185.53.88.104/"><img src="https://185.53.88.104/media/2019/05/mkvfa.png" />&nbsp;MkvAnime</a>
+</div>
+</div>
 
-        <h4 id="Anime"> ★彡[ANIME]彡★ </h4>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://gogoanime.sk"><img src="https://gogoanime.fi/img/icon/logo.png">&nbsp;Gogoanime</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://animixplay.to/"><img src="https://animixplay.to/assets/logo.png">&nbsp;Animixplay</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://animeflick.net/"><img src="https://i.ibb.co/02XyNSR/logo.png">&nbsp;Animeflick</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.animeworld.tv/"><img src="https://static.animeworld.tv/assets/images/favicon/android-icon-192x192.png?4">&nbsp;Animeworld</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://animefox.tv"><img src="https://animefox.sbs/favicon.ico">&nbsp;Animefox</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://allanime.site/"><img src="https://allanimemedias.b-cdn.net/media/allanime.png">&nbsp;Allanime</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://123animes.ru/"><img src="https://123animes.ru/assets/favicons/apple-touch-icon.png">&nbsp;123animes</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://kayoanime.com/"><img src="https://kayoanime.com/wp-content/uploads/2020/07/Kayoanimelogo.png">&nbsp;Kayoanime</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://anime5s.com/"><img src="https://anime5s.com/static/images/logo/logo_new_4symbols_original%20100px.png">&nbsp;Anime5s</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://anime-world.in/"><img src="https://anime-world.in/wp-content/uploads/2021/02/cropped-Icon-32x32.png">&nbsp;Anime World</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://animeacademy.in/"><img src="https://animeacademy.in/wp-content/uploads/2019/12/ANIMEACADEMY.IN-1-250x83.png">&nbsp;Animeacademy</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://deadtoons.net/"><img src="https://deadtoons.b-cdn.net/apple-touch-icon.png">&nbsp;Deadtoons</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://coolsanime.me/"><img src="https://coolsanime.me/wp-content/uploads/2022/03/logo.jpg">&nbsp;CoolsAnime</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.oldtoons4life.in/"><img src="https://1.bp.blogspot.com/-w2BfANTMpJ8/YZ0BZzrWxnI/AAAAAAAABLo/UMRDL6WnFSYwIqQxP2NfcUmJloLgns7gACLcBGAsYHQ/w300/oldto.png">&nbsp;OldToons</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://animebee.to/"><img src="https://animebee.to/assets/animebee/images/logo.png">&nbsp;AnimeBee</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://animet.tv/"><img src="https://animet.tv/favicon.ico">&nbsp;Animet</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://kimanime.com/"><img src="https://kimanime.com/favicon.ico">&nbsp;Kimanime</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://tenshi.moe/"><img src="https://i.ibb.co/4pVkztX/614549f8cfdb07005dc0fe04.png">&nbsp;Tenshi</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://raretoonshindi.net/"><img src="https://raretoonshindi.net/wp-content/uploads/2020/09/mini-logo.png">&nbsp;RareToons</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.genoanime.com/"><img src="https://www.genoanime.com/img/gen.gif">&nbsp;Genoanime</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://animepahe.com"><img src="https://animepahe.com/app/images/apdoesnthavelogotheysaidapistooplaintheysaid.svg">&nbsp;AnimePahe</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://puretoons.org/"><img src="https://i.postimg.cc/6pJyQs5y/20180505-125542.png">&nbsp;PureToons</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://dvanime.com/"><img src="https://dvanime.com/wp-content/uploads/2021/07/cropped-dvteam-logo-192x192.jpg">&nbsp;DvAnime</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://9xanime.in/"><img src="https://9xanime.in/wp-content/uploads/2020/11/9xanime.png">&nbsp;9xanime</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://twist.moe/"><img src="https://twist.moe/favicon.ico">&nbsp;Twist</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://animekisa.in/"><img src="https://animekisa.in/public/theme_animekisa/images/logo.png">&nbsp;Animekisa</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://kissanime.com.ru/"><img src="https://static.anmedm.com/images/icons/favicon_new.ico">&nbsp;KissAnime</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://9anime.id/"><img src="https://9anime.vc/images/logo.png">&nbsp;9anime</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://animesuge.to/"><img src="https://animesuge.to/assets/sites/animesuge/favicons/favicon.png">&nbsp;AnimeSuge</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://animania.co.uk/"><img src="https://animania.co.uk/images/logo-2.png">&nbsp;Animania</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://wcostream.cc/"><img src="https://wcostream.cc/public/theme_wcostream/images/logo.png">&nbsp;WCO Stream</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://zoro.to/"><img src="https://zoro.to/favicon.ico">&nbsp;Zoro</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://lite.animevibe.se/"><img src="https://lite.animevibe.se/192x192.png">&nbsp;AnimeVibe</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://5anime.net/"><img src="https://5anime.net/assets/img/logo.png">&nbsp;5anime</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://masteranime.es/"><img src="https://static.anmedm.com/static/img/masterani-icon.png">&nbsp;MasterAnime</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://animecruzers.me/"><img src="https://animecruzers.me/assets/img/favicon.png">&nbsp;AnimeCruzers</a></div>
-        </div>
+<h4 id="Anime">★彡[ANIME]彡★</h4>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://gogoanime.sk"><img src="https://gogoanime.fi/img/icon/logo.png" />&nbsp;Gogoanime</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://animixplay.to/"><img src="https://animixplay.to/assets/logo.png" />&nbsp;Animixplay</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://animeflick.net/"><img src="https://i.ibb.co/02XyNSR/logo.png" />&nbsp;Animeflick</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.animeworld.tv/"><img src="https://static.animeworld.tv/assets/images/favicon/android-icon-192x192.png?4" />&nbsp;Animeworld</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://animefox.tv"><img src="https://animefox.sbs/favicon.ico" />&nbsp;Animefox</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://allanime.site/"><img src="https://allanimemedias.b-cdn.net/media/allanime.png" />&nbsp;Allanime</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://123animes.ru/"><img src="https://123animes.ru/assets/favicons/apple-touch-icon.png" />&nbsp;123animes</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://kayoanime.com/"><img src="https://kayoanime.com/wp-content/uploads/2020/07/Kayoanimelogo.png" />&nbsp;Kayoanime</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://anime5s.com/"><img src="https://anime5s.com/static/images/logo/logo_new_4symbols_original%20100px.png" />&nbsp;Anime5s</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://anime-world.in/"><img src="https://anime-world.in/wp-content/uploads/2021/02/cropped-Icon-32x32.png" />&nbsp;Anime World</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://animeacademy.in/"><img src="https://animeacademy.in/wp-content/uploads/2019/12/ANIMEACADEMY.IN-1-250x83.png" />&nbsp;Animeacademy</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://deadtoons.net/"><img src="https://deadtoons.b-cdn.net/apple-touch-icon.png" />&nbsp;Deadtoons</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://coolsanime.me/"><img src="https://coolsanime.me/wp-content/uploads/2022/03/logo.jpg" />&nbsp;CoolsAnime</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.oldtoons4life.in/">
+<img src="https://1.bp.blogspot.com/-w2BfANTMpJ8/YZ0BZzrWxnI/AAAAAAAABLo/UMRDL6WnFSYwIqQxP2NfcUmJloLgns7gACLcBGAsYHQ/w300/oldto.png" />&nbsp;OldToons
+</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://animebee.to/"><img src="https://animebee.to/assets/animebee/images/logo.png" />&nbsp;AnimeBee</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://animet.tv/"><img src="https://animet.tv/favicon.ico" />&nbsp;Animet</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://kimanime.com/"><img src="https://kimanime.com/favicon.ico" />&nbsp;Kimanime</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://tenshi.moe/"><img src="https://i.ibb.co/4pVkztX/614549f8cfdb07005dc0fe04.png" />&nbsp;Tenshi</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://raretoonshindi.net/"><img src="https://raretoonshindi.net/wp-content/uploads/2020/09/mini-logo.png" />&nbsp;RareToons</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.genoanime.com/"><img src="https://www.genoanime.com/img/gen.gif" />&nbsp;Genoanime</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://animepahe.com"><img src="https://animepahe.com/app/images/apdoesnthavelogotheysaidapistooplaintheysaid.svg" />&nbsp;AnimePahe</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://puretoons.org/"><img src="https://i.postimg.cc/6pJyQs5y/20180505-125542.png" />&nbsp;PureToons</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://dvanime.com/"><img src="https://dvanime.com/wp-content/uploads/2021/07/cropped-dvteam-logo-192x192.jpg" />&nbsp;DvAnime</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://9xanime.in/"><img src="https://9xanime.in/wp-content/uploads/2020/11/9xanime.png" />&nbsp;9xanime</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://twist.moe/"><img src="https://twist.moe/favicon.ico" />&nbsp;Twist</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://animekisa.in/"><img src="https://animekisa.in/public/theme_animekisa/images/logo.png" />&nbsp;Animekisa</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://kissanime.com.ru/"><img src="https://static.anmedm.com/images/icons/favicon_new.ico" />&nbsp;KissAnime</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://9anime.id/"><img src="https://9anime.vc/images/logo.png" />&nbsp;9anime</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://animesuge.to/"><img src="https://animesuge.to/assets/sites/animesuge/favicons/favicon.png" />&nbsp;AnimeSuge</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://animania.co.uk/"><img src="https://animania.co.uk/images/logo-2.png" />&nbsp;Animania</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://wcostream.cc/"><img src="https://wcostream.cc/public/theme_wcostream/images/logo.png" />&nbsp;WCO Stream</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://zoro.to/"><img src="https://zoro.to/favicon.ico" />&nbsp;Zoro</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://lite.animevibe.se/"><img src="https://lite.animevibe.se/192x192.png" />&nbsp;AnimeVibe</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://5anime.net/"><img src="https://5anime.net/assets/img/logo.png" />&nbsp;5anime</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://masteranime.es/"><img src="https://static.anmedm.com/static/img/masterani-icon.png" />&nbsp;MasterAnime</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://animecruzers.me/"><img src="https://animecruzers.me/assets/img/favicon.png" />&nbsp;AnimeCruzers</a>
+</div>
+</div>
 
-        <h4 id="Manga"> ★彡[MANGA]彡★ </h4>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://manganato.com/"><img src="https://manganato.com/favicon.ico">&nbsp;Manganato</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://mangadex.org/"><img src="https://mangadex.org/favicon.ico">&nbsp;Mangadex</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://w13.mangafreak.net/"><img src="https://i.ibb.co/6J8kcnn/MF-5.png">&nbsp;Mangafreak</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://comic-gardo.com/"><img src="https://cdn.comic-gardo.com/images/android-icon-192.png">&nbsp;Comic Gardo</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://magcomi.com/"><img src="https://cdn.magcomi.com/images/android-icon-192.png">&nbsp;MagComi</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://mangabat.com/"><img src="https://mangabat.com/favicon.ico">&nbsp;Mangabat</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://mangapark.net/"><img src="https://styles.amarkcdn.com/img/mpark/favicon.ico?v1">&nbsp;Mangapark</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://manga4life.com/"><img src="https://i.ibb.co/18bJ9D7/navbar-brand-small.png">&nbsp;Manga4Life</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://kissmanga.org/"><img src="https://kissmanga.org/static/images/favicon.ico">&nbsp;Kissmanga</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://mangatx.com/"><img src="https://i.ibb.co/rmQjw2y/MANGATX.png">&nbsp;Mangatx</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://mangabuddy.com/"><img src="https://mangabuddy.com/static/sites/mangabuddy/icons/apple-touch-icon.png">&nbsp;Mangabuddy</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://mangapill.com/"><img src="https://i.ibb.co/KqpH7HN/apple-touch-icon.png">&nbsp;Mangapill</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://mangareader.to/"><img src="https://mangareader.to/favicon.ico">&nbsp;Mangareader</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://fanfox.net/"><img src="https://m.fanfox.net/mobile/images/touch-icon-ipad2.png">&nbsp;Fanfox</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://mangatown.com/"><img src="https://m.mangatown.com/media/images/touch-icon-ipad2.png">&nbsp;Mangatown</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.comicextra.com/"><img src="https://www.comicextra.com/favicon.ico">&nbsp;ComicExtra</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://ninemanga.com/"><img src="https://ninemanga.com/favicon.ico">&nbsp;Ninemanga</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://readm.org/"><img src="https://readm.org/favicon.ico">&nbsp;Readm</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://bato.to/"><img src="https://styles.amarkcdn.com/img/btoto/logo-batoto.png">&nbsp;Bato</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://manhuafast.com/"><img src="https://manhuafast.com/wp-content/uploads/2017/10/logo-web-manhuafast-1.png">&nbsp;Manhuafast</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://mangahub.io/"><img src="https://mangahub.io/favicon.ico">&nbsp;Mangahub</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.remanhwa.com"><img src="https://www.remanhwa.com/logo.png">&nbsp;Remanhwa</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://1stkissmanga.io"><img src="https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://1stkissmanga.io&size=128">&nbsp;1stkissmanga</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://mangaweebs.in"><img src="https://mangaweebs.in/cdn-cgi/images/external.png">&nbsp;Mangaweebs</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://manhwaz.com"><img src="https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://manhwaz.com&size=128">&nbsp;Manhwaz</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://getcomics.info"><img src="https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://getcomics.info&size=128">&nbsp;GetComics</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://comicastle.org/home"><img src="https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://comicastle.org&size=128">&nbsp;ComiCastle</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://manga-zip.info"><img src="https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://manga-zip.info&size=128">&nbsp;Manga-Zip</a></div>
-        </div>
+<h4 id="Manga">★彡[MANGA]彡★</h4>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://manganato.com/"><img src="https://manganato.com/favicon.ico" />&nbsp;Manganato</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://mangadex.org/"><img src="https://mangadex.org/favicon.ico" />&nbsp;Mangadex</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://w13.mangafreak.net/"><img src="https://i.ibb.co/6J8kcnn/MF-5.png" />&nbsp;Mangafreak</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://comic-gardo.com/"><img src="https://cdn.comic-gardo.com/images/android-icon-192.png" />&nbsp;Comic Gardo</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://magcomi.com/"><img src="https://cdn.magcomi.com/images/android-icon-192.png" />&nbsp;MagComi</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://mangabat.com/"><img src="https://mangabat.com/favicon.ico" />&nbsp;Mangabat</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://mangapark.net/"><img src="https://styles.amarkcdn.com/img/mpark/favicon.ico?v1" />&nbsp;Mangapark</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://manga4life.com/"><img src="https://i.ibb.co/18bJ9D7/navbar-brand-small.png" />&nbsp;Manga4Life</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://kissmanga.org/"><img src="https://kissmanga.org/static/images/favicon.ico" />&nbsp;Kissmanga</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://mangatx.com/"><img src="https://i.ibb.co/rmQjw2y/MANGATX.png" />&nbsp;Mangatx</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://mangabuddy.com/"><img src="https://mangabuddy.com/static/sites/mangabuddy/icons/apple-touch-icon.png" />&nbsp;Mangabuddy</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://mangapill.com/"><img src="https://i.ibb.co/KqpH7HN/apple-touch-icon.png" />&nbsp;Mangapill</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://mangareader.to/"><img src="https://mangareader.to/favicon.ico" />&nbsp;Mangareader</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://fanfox.net/"><img src="https://m.fanfox.net/mobile/images/touch-icon-ipad2.png" />&nbsp;Fanfox</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://mangatown.com/"><img src="https://m.mangatown.com/media/images/touch-icon-ipad2.png" />&nbsp;Mangatown</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.comicextra.com/"><img src="https://www.comicextra.com/favicon.ico" />&nbsp;ComicExtra</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://ninemanga.com/"><img src="https://ninemanga.com/favicon.ico" />&nbsp;Ninemanga</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://readm.org/"><img src="https://readm.org/favicon.ico" />&nbsp;Readm</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://bato.to/"><img src="https://styles.amarkcdn.com/img/btoto/logo-batoto.png" />&nbsp;Bato</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://manhuafast.com/"><img src="https://manhuafast.com/wp-content/uploads/2017/10/logo-web-manhuafast-1.png" />&nbsp;Manhuafast</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://mangahub.io/"><img src="https://mangahub.io/favicon.ico" />&nbsp;Mangahub</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.remanhwa.com"><img src="https://www.remanhwa.com/logo.png" />&nbsp;Remanhwa</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://1stkissmanga.io">
+<img src="https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://1stkissmanga.io&size=128" />&nbsp;1stkissmanga
+</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://mangaweebs.in"><img src="https://mangaweebs.in/cdn-cgi/images/external.png" />&nbsp;Mangaweebs</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://manhwaz.com">
+<img src="https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://manhwaz.com&size=128" />&nbsp;Manhwaz
+</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://getcomics.info">
+<img src="https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://getcomics.info&size=128" />&nbsp;GetComics
+</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://comicastle.org/home">
+<img src="https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://comicastle.org&size=128" />&nbsp;ComiCastle
+</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://manga-zip.info">
+<img src="https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://manga-zip.info&size=128" />&nbsp;Manga-Zip
+</a>
+</div>
+</div>
 
-        <h4 id="LN"> ★彡[LIGHT NOVEL]彡★ </h4>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://uncoder.eu.org/"><img src="https://readlightnovels.net/wp-content/uploads/2020/01/rln-logo-ret.png">&nbsp;Uncoder</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://mtlnation.com/"><img src="https://i.ibb.co/7nzMk2x/mtlnation-mobile-logo.png">&nbsp;Mtlnation</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://comrademao.com/"><img src="https://comrademao.com/favicon.ico">&nbsp;Comrademao</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.mtlnovel.com/"><img src="https://www.mtlnovel.com/favicon.ico">&nbsp;Mtlnovel</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://novelsrealm.com/"><img src="https://novelsrealm.com/wp-content/uploads/2021/02/cropped-android-chrome-512x512-1-32x32.png">&nbsp;Novelsrealm</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.wnmtl.org/"><img src="https://www.privacytools.io/img/apps/lesspass.svg">&nbsp;Wnmtl</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://novel-ebook.com/"><img src="https://i.ibb.co/kHFCYmT/favicon.png">&nbsp;Novel Ebook</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://lnmtl.com/"><img src="https://lnmtl.com/favicon.ico">&nbsp;Lnmtl</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://daonovel.com/"><img src="https://daonovel.com/wp-content/uploads/2019/02/cropped-favicon.png">&nbsp;Daonovel</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://ranobes.net/"><img src="https://ranobes.net/templates/Dark/images/favicon.ico">&nbsp;Ranobes</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://mp4directs.com/"><img src="https://mp4directs.com/styles/intrepid/xenforo/logo.png">&nbsp;Mp4Directs</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://boxnovel.com/"><img src="https://boxnovel.com/wp-content/uploads/2018/04/BoxNovelNEW-Copy.png">&nbsp;Boxnovel</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://thatnovelcorner.com/"><img src="https://i2.wp.com/thatnovelcorner.com/wp2/wp-content/uploads/2017/04/cropped-konachan-com-74756-landscape-original-polychromatic-ruins-scenic-sky-sumashi-yellow-sumashi.jpg">&nbsp;NovelCorner</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.justlightnovels.com/"><img src="https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://justlightnovels.com&size=16-yellow-sumashi.jpg">&nbsp;JustLN</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://listnovel.com/"><img src="https://listnovel.com/wp-content/uploads/2020/08/cropped-Untitledtg-180x180.png">&nbsp;Listnovel</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.readlightnovel.me/"><img src="https://www.readlightnovel.me/favicon.ico">&nbsp;ReadLN</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.royalroad.com/"><img src="https://www.royalroad.com/dist/img/logo/rr-logo-gold-white-small-min.png">&nbsp;Royal Road</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.readwn.com/"><img src="https://www.readwn.com/favicon.ico">&nbsp;Readwn</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://soxscc.org/"><img src="https://www.soxscc.org/favicon.ico">&nbsp;Soxscc</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://imiaobige.com/"><img src="https://www.imiaobige.com/favicon.ico">&nbsp;Imiaobige</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://m.wangshuge.com/"><img src="https://m.wangshuge.com/favicon.ico">&nbsp;Wangshuge</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://m.feiludushu.com/"><img src="https://m.feiludushu.com/favicon.ico">&nbsp;Feiludushu</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://m.jiacuan.com/"><img src="https://i.ibb.co/djJ6CpX/144-1.png">&nbsp;Jiacuan</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://jpmtl.com/"><img src="https://jpmtl.com/favicon.ico">&nbsp;Jpmtl</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://kakuyomu.jp/"><img src="https://cdn-static.kakuyomu.jp/images/brand/kakuyomu-logo.png">&nbsp;Kakuyomu</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://yomou.syosetu.com/"><img src="https://static.syosetu.com/view/images/common/logo_yomou.png">&nbsp;YomouSyosetu</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://syosetu.org/"><img src="https://img.syosetu.org/image/icon-192x192.png">&nbsp;Syosetu</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://magnet-novels.com/"><img src="https://m.magnet-novels.com/static/download/icon.png">&nbsp;MagnetNovels</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://pkcr.jp/"><img src="https://pkcr.jp/wp-content/themes/pkcr/images/sp_h_logo.gif">&nbsp;PKCR</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://yushubo.com/"><img src="https://yushubo.com/favicon.ico">&nbsp;Yushubo</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.yipinxia.net/"><img src="https://www.yipinxia.net/favicon.ico">&nbsp;Yipinxia</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="http://wap.wushuzw.com/"><img src="https://i.ibb.co/djJ6CpX/144-1.png">&nbsp;Wushuzw</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="http://www.ffxs8.com/"><img src="https://www.ffxs8.com/favicon.ico">&nbsp;Ffxs8</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://m.sfacg.com/"><img src="https://i.ibb.co/djJ6CpX/144-1.png">&nbsp;Sfacg</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://17k.com/"><img src="https://17k.com/favicon.ico">&nbsp;17k</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="http://m.77dushu.com/"><img src="https://i.ibb.co/djJ6CpX/144-1.png">&nbsp;77dushu</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://m.biqusa.com/"><img src="https://i.ibb.co/djJ6CpX/144-1.png">&nbsp;Biqusa</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://m.iquxs.com/"><img src="https://i.ibb.co/djJ6CpX/144-1.png">&nbsp;Iquxs</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="http://m.qjzfcgw.com/"><img src="https://i.ibb.co/djJ6CpX/144-1.png">&nbsp;Qjzfcgw</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://m.feixs.com"><img src="https://m.feixs.com/favicon.ico">&nbsp;Feixs</a></div>
-        </div>
+<h4 id="LN">★彡[LIGHT NOVEL]彡★</h4>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://uncoder.eu.org/"><img src="https://readlightnovels.net/wp-content/uploads/2020/01/rln-logo-ret.png" />&nbsp;Uncoder</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://mtlnation.com/"><img src="https://i.ibb.co/7nzMk2x/mtlnation-mobile-logo.png" />&nbsp;Mtlnation</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://comrademao.com/"><img src="https://comrademao.com/favicon.ico" />&nbsp;Comrademao</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.mtlnovel.com/"><img src="https://www.mtlnovel.com/favicon.ico" />&nbsp;Mtlnovel</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://novelsrealm.com/"><img src="https://novelsrealm.com/wp-content/uploads/2021/02/cropped-android-chrome-512x512-1-32x32.png" />&nbsp;Novelsrealm</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.wnmtl.org/"><img src="https://www.privacytools.io/img/apps/lesspass.svg" />&nbsp;Wnmtl</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://novel-ebook.com/"><img src="https://i.ibb.co/kHFCYmT/favicon.png" />&nbsp;Novel Ebook</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://lnmtl.com/"><img src="https://lnmtl.com/favicon.ico" />&nbsp;Lnmtl</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://daonovel.com/"><img src="https://daonovel.com/wp-content/uploads/2019/02/cropped-favicon.png" />&nbsp;Daonovel</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://ranobes.net/"><img src="https://ranobes.net/templates/Dark/images/favicon.ico" />&nbsp;Ranobes</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://mp4directs.com/"><img src="https://mp4directs.com/styles/intrepid/xenforo/logo.png" />&nbsp;Mp4Directs</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://boxnovel.com/"><img src="https://boxnovel.com/wp-content/uploads/2018/04/BoxNovelNEW-Copy.png" />&nbsp;Boxnovel</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://thatnovelcorner.com/">
+<img src="https://i2.wp.com/thatnovelcorner.com/wp2/wp-content/uploads/2017/04/cropped-konachan-com-74756-landscape-original-polychromatic-ruins-scenic-sky-sumashi-yellow-sumashi.jpg" />&nbsp;NovelCorner
+</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.justlightnovels.com/">
+<img src="https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://justlightnovels.com&size=16-yellow-sumashi.jpg" />&nbsp;JustLN
+</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://listnovel.com/"><img src="https://listnovel.com/wp-content/uploads/2020/08/cropped-Untitledtg-180x180.png" />&nbsp;Listnovel</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.readlightnovel.me/"><img src="https://www.readlightnovel.me/favicon.ico" />&nbsp;ReadLN</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.royalroad.com/"><img src="https://www.royalroad.com/dist/img/logo/rr-logo-gold-white-small-min.png" />&nbsp;Royal Road</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.readwn.com/"><img src="https://www.readwn.com/favicon.ico" />&nbsp;Readwn</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://soxscc.org/"><img src="https://www.soxscc.org/favicon.ico" />&nbsp;Soxscc</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://imiaobige.com/"><img src="https://www.imiaobige.com/favicon.ico" />&nbsp;Imiaobige</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://m.wangshuge.com/"><img src="https://m.wangshuge.com/favicon.ico" />&nbsp;Wangshuge</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://m.feiludushu.com/"><img src="https://m.feiludushu.com/favicon.ico" />&nbsp;Feiludushu</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://m.jiacuan.com/"><img src="https://i.ibb.co/djJ6CpX/144-1.png" />&nbsp;Jiacuan</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://jpmtl.com/"><img src="https://jpmtl.com/favicon.ico" />&nbsp;Jpmtl</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://kakuyomu.jp/"><img src="https://cdn-static.kakuyomu.jp/images/brand/kakuyomu-logo.png" />&nbsp;Kakuyomu</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://yomou.syosetu.com/"><img src="https://static.syosetu.com/view/images/common/logo_yomou.png" />&nbsp;YomouSyosetu</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://syosetu.org/"><img src="https://img.syosetu.org/image/icon-192x192.png" />&nbsp;Syosetu</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://magnet-novels.com/"><img src="https://m.magnet-novels.com/static/download/icon.png" />&nbsp;MagnetNovels</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://pkcr.jp/"><img src="https://pkcr.jp/wp-content/themes/pkcr/images/sp_h_logo.gif" />&nbsp;PKCR</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://yushubo.com/"><img src="https://yushubo.com/favicon.ico" />&nbsp;Yushubo</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.yipinxia.net/"><img src="https://www.yipinxia.net/favicon.ico" />&nbsp;Yipinxia</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="http://wap.wushuzw.com/"><img src="https://i.ibb.co/djJ6CpX/144-1.png" />&nbsp;Wushuzw</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="http://www.ffxs8.com/"><img src="https://www.ffxs8.com/favicon.ico" />&nbsp;Ffxs8</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://m.sfacg.com/"><img src="https://i.ibb.co/djJ6CpX/144-1.png" />&nbsp;Sfacg</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://17k.com/"><img src="https://17k.com/favicon.ico" />&nbsp;17k</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="http://m.77dushu.com/"><img src="https://i.ibb.co/djJ6CpX/144-1.png" />&nbsp;77dushu</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://m.biqusa.com/"><img src="https://i.ibb.co/djJ6CpX/144-1.png" />&nbsp;Biqusa</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://m.iquxs.com/"><img src="https://i.ibb.co/djJ6CpX/144-1.png" />&nbsp;Iquxs</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="http://m.qjzfcgw.com/"><img src="https://i.ibb.co/djJ6CpX/144-1.png" />&nbsp;Qjzfcgw</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://m.feixs.com"><img src="https://m.feixs.com/favicon.ico" />&nbsp;Feixs</a>
+</div>
+</div>
 
-        <h4 id="App"> ★彡[APPLICATION'S]彡★ </h4>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.puretuber.com/"><img src="https://www.puretuber.com/favicon.ico">&nbsp;PureTuber</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/libre-tube/LibreTube"><img src="https://f-droid.org/repo/com.github.libretube/en-US/icon_CKCUMM-dppEdVCd-sVMhJF-rQMBkluF1UUJqge3wddg=.png">&nbsp;LibreTube</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/SongTube/SongTube-App"><img src="https://d4.alternativeto.net/odk20FS3okWK_RbUTsHXxMbohCC-OZ4VLabrZaW27NA/rs:fill:140:140:0/g:ce:0:0/YWJzOi8vZGlzdC9pY29ucy9zb25ndHViZV8xOTcyODcucG5n.png">&nbsp;SongTube</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/Frontesque/VueTube"><img src="https://rawcdn.githack.com/Frontesque/VueTube/d2934d586a206675478f3c99cfade9df76083fd0/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png">&nbsp;VueTube</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/polymorphicshade/NewPipe"><img src="https://d4.alternativeto.net/AxWXrd9h2amWF4PHAFXKxRuWpOMOAzC5Z0xjPjSB9uE/rs:fill:140:140:0/g:ce:0:0/YWJzOi8vZGlzdC9pY29ucy9uZXdwaXBlXzk1MzAwLnBuZw.png">&nbsp;NewPipe</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/qnblackcat/uYouPlus"><img src="https://img.icons8.com/doodle/480/000000/youtube-play--v2.png">&nbsp;uYouPlus</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/yattee/yattee"><img src="https://i.ibb.co/zP0vXgw/68747470733a2f2f722e7961747465652e73747265616d2f69636f6e732f7961747465652d3135302e706e67.png">&nbsp;Yattee</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/qnblackcat/CercubePlus"><img src="https://img.icons8.com/doodle/480/000000/youtube-play--v1.png">&nbsp;CercubePlus</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/SkyTubeTeam/SkyTube"><img src="https://d4.alternativeto.net/E7MM7_FxRvNsLLkgLbIERFvjbAomduN41knWA7qlxWQ/rs:fill:140:140:0/g:ce:0:0/YWJzOi8vZGlzdC9pY29ucy9za3l0dWJlXzE1OTA0Mi5wbmc.png">&nbsp;SkyTube</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/FreeTubeApp/FreeTube"><img src="https://d4.alternativeto.net/KkMBv9B_9P1FqX3bAQtctUokliW48xGKe1j_Y5aIGjY/rs:fill:140:140:0/g:ce:0:0/YWJzOi8vZGlzdC9pY29ucy9mcmVldHViZV8xMjcyMDYucG5n.png">&nbsp;FreeTube</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/prateekmedia/sftube"><img src="https://rawcdn.githack.com/prateekmedia/pstube/2945dc27da9fcc60aaabff8079b7209d7aeb48fa/assets/pstube.png">&nbsp;Sftube</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/yuliskov/SmartTubeNext"><img src="https://smarttubenext.com/wp-content/uploads/2021/09/cropped-smarttubenext-dark-logo.webp">&nbsp;SmartTubeNext</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/TeamVanced"><img src="https://youtubevanced.com/assets/img/logo.svg">&nbsp;Vanced</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://revanced.app/"><img src="https://avatars.githubusercontent.com/u/101597779?s=200&v=4">&nbsp;ReVanced</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/ToBiDi0410/IonicTube"><img src="https://i.ibb.co/ZTw4F0Y/youtube.png">&nbsp;IonicTube</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://play.google.com/store/apps/details?id=premium.gotube.adblock.utube"><img src="https://modyolo.com/wp-content/uploads/2022/01/gotube-block-all-ads-mod-apk.png">&nbsp;GoTube</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/kazemcodes/IReader"><img src="https://rawcdn.githack.com/kazemcodes/IReader/02ceb4fa80585e615edb0383c9dfe71cca873a0a/common-resources/src/main/res/mipmap-hdpi/ic_launcher.png">&nbsp;IReader</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://play.google.com/store/apps/details?id=free.daily.tube.background"><img src="https://image.winudf.com/v2/image1/ZnJlZS5kYWlseS50dWJlLmJhY2tncm91bmRfaWNvbl8xNjQzMDY2OTQzXzAwOA/icon.png?w=100&fakeurl=1&type=.webp">&nbsp;DailyTube</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/stephane-r/HoloPlay"><img src="https://rawcdn.githack.com/stephane-r/HoloPlay/df5f08a27d837322382dc84faa620ca36c54325f/docs/logo.png">&nbsp;HoloPlay</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/deep-gaurav/MusicPiped"><img src="https://rawcdn.githack.com/deep-gaurav/MusicPiped/d8b7da100a355424820802030b0b68aca468e6a2/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png">&nbsp;MusicPiped</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/uditkarode/AbleMusicPlayer"><img src="https://rawcdn.githack.com/uditkarode/AbleMusicPlayer/26602410df8aa490702988f809f07b2630096bb7/app/src/main/ic_launcher-playstore.png">&nbsp;AbleMusicPlayer</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://shosetsu.app/"><img src="https://shosetsu.app/favicon.ico">&nbsp;Shosetsu</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/LNReader/lnreader"><img src="https://rawcdn.githack.com/LNReader/lnreader/3afbb5c45da7e0e3329286d83a95020cc8971366/.github/readme-images/icon_alt.png">&nbsp;LNReader</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/rhygg/yukino-app/"><img src="https://rawcdn.githack.com/rhygg/yukino-app/7c8543bdb19c248b51605d8699650118401c483d/resources/icon.png">&nbsp;Yukino</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/jakepurple13/OtakuWorld/"><img src="https://rawcdn.githack.com/jakepurple13/OtakuWorld/62f1e36b1a1d554f2adc23e368ce743d2d34cbe8/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png">&nbsp;OtakuWorld</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/Killerpac/Kayuri"><img src="https://rawcdn.githack.com/Killerpac/Kayuri/5e8c74f486db4c538054b89204a4a74bde507225/meta/android/kayuri.jpg">&nbsp;Kayuri</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/kaungsatthe1n/Tako-Play"><img src="https://rawcdn.githack.com/kaungsatthe1n/Tako-Play/750168c708a7b7d904a0929a8938af93b21bd81b/assets/images/logo.jpg">&nbsp;Tako Play</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/kl3jvi/animity"><img src="https://rawcdn.githack.com/kl3jvi/animity/ffc5aab9a33604fc011f7eef5baeba7f21276a1e/app/src/main/ic_launcher-playstore.png">&nbsp;Animity</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/tatsuz0u/EhPanda"><img src="https://user-images.githubusercontent.com/31207151/105609404-0acbff00-5de4-11eb-9e88-f3c6e0ba9d44.png">&nbsp;EhPanda</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/Dar9586/NClientV2"><img src="https://rawcdn.githack.com/Dar9586/NClientV2/fb021eaac94a66f435e48030993bb2335e9faf71/app/src/main/ic_launcher-web.png">&nbsp;NClientV2</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/LagradOst/QuickNovel"><img src="https://rawcdn.githack.com/LagradOst/QuickNovel/f68a17dd4e7789061149c0ab3b96d1b2fa1a2a1b/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png">&nbsp;QuickNovel</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/CarlosEsco/Neko"><img src="https://rawcdn.githack.com/CarlosEsco/Neko/9e3a5aa4c9f512574ee9f204606e4ab4f29ff440/.github/readme-images/logo.png">&nbsp;Neko</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/jobobby04/TachiyomiSY/"><img src="https://rawcdn.githack.com/jobobby04/TachiyomiSY/76f5625948316a09ed02d422b5f22b3231a08453/app/src/main/ic_launcher-web.png">&nbsp;TachiyomiSY</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/LagradOst/CloudStream-3"><img src="https://rawcdn.githack.com/LagradOst/CloudStream-3/7bf77cb40844157c1b614969f8bde307b6ab3413/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png">&nbsp;CloudStream</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/saikou-app/saikou"><img src="https://rawcdn.githack.com/saikou-app/saikou/9dffa23e264bf02e3078005c57629180b4a74bba/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png">&nbsp;Saikou</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/nv95/Kotatsu/"><img src="https://rawcdn.githack.com/nv95/Kotatsu/ce1c607f052ed258c3e9d524a5a0c285acb9a95a/app/src/main/res/drawable-xxxhdpi/ic_shortcut_default.png">&nbsp;Kotatsu</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/vendz/Cineapp/"><img src="https://rawcdn.githack.com/vendz/Cineapp/066b5f1c31d99d4392c2cbeeb69afb98d4eda254/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png">&nbsp;Cineapp</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/StreamerApp/Streamer"><img src="https://i.ibb.co/w48m3Z7/images.jpg">&nbsp;Streamer</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/mukul500/AnimeXStream/"><img src="https://rawcdn.githack.com/mukul500/AnimeXStream/4ff6a823e33fc2c555c6b7e69b816f4e487d2c84/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png">&nbsp;AnimeXStream</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/jmir1/aniyomi/"><img src="https://rawcdn.githack.com/jmir1/aniyomi/b72a24f86730d37d39be180c358ee852d0221399/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png">&nbsp;Aniyomi</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/Sangwan5688/BlackHole"><img src="https://rawcdn.githack.com/Sangwan5688/BlackHole/85c6258cec9325f87990911d919da81582ac51d8/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png">&nbsp;BlackHole</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/Shabinder/SpotiFlyer"><img src="https://rawcdn.githack.com/Shabinder/SpotiFlyer/c035596721ae1a884d86f810a6848bc925bb15fd/art/SpotiFlyer.svg">&nbsp;SpotiFlyer</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/KRTirtho/spotube"><img src="https://rawcdn.githack.com/KRTirtho/spotube/580d7eea601214b256860788634fd28389eeab3e/assets/spotube_banner.png">&nbsp;SpoTube</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://ymusic.io/"><img src="https://ymusic.io/favicons/apple-touch-icon.png">&nbsp;Ymusic</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/avluis/Hentoid"><img src="https://rawcdn.githack.com/avluis/Hentoid/309b738617856d3b7bcb1d34f4a031671b0005b3/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png">&nbsp;Hentoid</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/gokadzev/Musify"><img src="https://rawcdn.githack.com/gokadzev/Musify/b4b10d27258af290c21965aee5a2c0fc81c5c693/assets/images/splash.png">&nbsp;Musify</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/gsioteam/kinoko"><img src="https://rawcdn.githack.com/gsioteam/kinoko/bd8d3965ced75031f935d7b1c7fd3a0712135759/assets/icon.png">&nbsp;Kinoko</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/xgi/houdoku"><img src="https://rawcdn.githack.com/xgi/houdoku/5e3e40256247cfcca9d187d51b211f42f19d9d4d/assets/icon.png">&nbsp;Houdoku</a></div>
-        </div>
+<h4 id="App">★彡[APPLICATION'S]彡★</h4>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.puretuber.com/"><img src="https://www.puretuber.com/favicon.ico" />&nbsp;PureTuber</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/libre-tube/LibreTube">
+<img src="https://f-droid.org/repo/com.github.libretube/en-US/icon_CKCUMM-dppEdVCd-sVMhJF-rQMBkluF1UUJqge3wddg=.png" />&nbsp;LibreTube
+</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/SongTube/SongTube-App">
+<img src="https://d4.alternativeto.net/odk20FS3okWK_RbUTsHXxMbohCC-OZ4VLabrZaW27NA/rs:fill:140:140:0/g:ce:0:0/YWJzOi8vZGlzdC9pY29ucy9zb25ndHViZV8xOTcyODcucG5n.png" />&nbsp;SongTube
+</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/Frontesque/VueTube">
+<img src="https://rawcdn.githack.com/Frontesque/VueTube/d2934d586a206675478f3c99cfade9df76083fd0/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" />&nbsp;VueTube
+</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/polymorphicshade/NewPipe">
+<img src="https://d4.alternativeto.net/AxWXrd9h2amWF4PHAFXKxRuWpOMOAzC5Z0xjPjSB9uE/rs:fill:140:140:0/g:ce:0:0/YWJzOi8vZGlzdC9pY29ucy9uZXdwaXBlXzk1MzAwLnBuZw.png" />&nbsp;NewPipe
+</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/qnblackcat/uYouPlus"><img src="https://img.icons8.com/doodle/480/000000/youtube-play--v2.png" />&nbsp;uYouPlus</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/yattee/yattee">
+<img src="https://i.ibb.co/zP0vXgw/68747470733a2f2f722e7961747465652e73747265616d2f69636f6e732f7961747465652d3135302e706e67.png" />&nbsp;Yattee
+</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/qnblackcat/CercubePlus"><img src="https://img.icons8.com/doodle/480/000000/youtube-play--v1.png" />&nbsp;CercubePlus</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/SkyTubeTeam/SkyTube">
+<img src="https://d4.alternativeto.net/E7MM7_FxRvNsLLkgLbIERFvjbAomduN41knWA7qlxWQ/rs:fill:140:140:0/g:ce:0:0/YWJzOi8vZGlzdC9pY29ucy9za3l0dWJlXzE1OTA0Mi5wbmc.png" />&nbsp;SkyTube
+</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/FreeTubeApp/FreeTube">
+<img src="https://d4.alternativeto.net/KkMBv9B_9P1FqX3bAQtctUokliW48xGKe1j_Y5aIGjY/rs:fill:140:140:0/g:ce:0:0/YWJzOi8vZGlzdC9pY29ucy9mcmVldHViZV8xMjcyMDYucG5n.png" />&nbsp;FreeTube
+</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/prateekmedia/sftube">
+<img src="https://rawcdn.githack.com/prateekmedia/pstube/2945dc27da9fcc60aaabff8079b7209d7aeb48fa/assets/pstube.png" />&nbsp;Sftube
+</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/yuliskov/SmartTubeNext">
+<img src="https://smarttubenext.com/wp-content/uploads/2021/09/cropped-smarttubenext-dark-logo.webp" />&nbsp;SmartTubeNext
+</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/TeamVanced"><img src="https://youtubevanced.com/assets/img/logo.svg" />&nbsp;Vanced</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://revanced.app/"><img src="https://avatars.githubusercontent.com/u/101597779?s=200&v=4" />&nbsp;ReVanced</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/ToBiDi0410/IonicTube"><img src="https://i.ibb.co/ZTw4F0Y/youtube.png" />&nbsp;IonicTube</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://play.google.com/store/apps/details?id=premium.gotube.adblock.utube">
+<img src="https://modyolo.com/wp-content/uploads/2022/01/gotube-block-all-ads-mod-apk.png" />&nbsp;GoTube
+</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/kazemcodes/IReader">
+<img src="https://rawcdn.githack.com/kazemcodes/IReader/02ceb4fa80585e615edb0383c9dfe71cca873a0a/common-resources/src/main/res/mipmap-hdpi/ic_launcher.png" />&nbsp;IReader
+</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://play.google.com/store/apps/details?id=free.daily.tube.background">
+<img src="https://image.winudf.com/v2/image1/ZnJlZS5kYWlseS50dWJlLmJhY2tncm91bmRfaWNvbl8xNjQzMDY2OTQzXzAwOA/icon.png?w=100&fakeurl=1&type=.webp" />&nbsp;DailyTube
+</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/stephane-r/HoloPlay">
+<img src="https://rawcdn.githack.com/stephane-r/HoloPlay/df5f08a27d837322382dc84faa620ca36c54325f/docs/logo.png" />&nbsp;HoloPlay
+</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/deep-gaurav/MusicPiped">
+<img src="https://rawcdn.githack.com/deep-gaurav/MusicPiped/d8b7da100a355424820802030b0b68aca468e6a2/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" />&nbsp;MusicPiped
+</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/uditkarode/AbleMusicPlayer">
+<img src="https://rawcdn.githack.com/uditkarode/AbleMusicPlayer/26602410df8aa490702988f809f07b2630096bb7/app/src/main/ic_launcher-playstore.png" />&nbsp;AbleMusicPlayer
+</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://shosetsu.app/"><img src="https://shosetsu.app/favicon.ico" />&nbsp;Shosetsu</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/LNReader/lnreader">
+<img src="https://rawcdn.githack.com/LNReader/lnreader/3afbb5c45da7e0e3329286d83a95020cc8971366/.github/readme-images/icon_alt.png" />&nbsp;LNReader
+</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/rhygg/yukino-app/">
+<img src="https://rawcdn.githack.com/rhygg/yukino-app/7c8543bdb19c248b51605d8699650118401c483d/resources/icon.png" />&nbsp;Yukino
+</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/jakepurple13/OtakuWorld/">
+<img src="https://rawcdn.githack.com/jakepurple13/OtakuWorld/62f1e36b1a1d554f2adc23e368ce743d2d34cbe8/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" />&nbsp;OtakuWorld
+</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/Killerpac/Kayuri">
+<img src="https://rawcdn.githack.com/Killerpac/Kayuri/5e8c74f486db4c538054b89204a4a74bde507225/meta/android/kayuri.jpg" />&nbsp;Kayuri
+</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/kaungsatthe1n/Tako-Play">
+<img src="https://rawcdn.githack.com/kaungsatthe1n/Tako-Play/750168c708a7b7d904a0929a8938af93b21bd81b/assets/images/logo.jpg" />&nbsp;Tako Play
+</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/kl3jvi/animity">
+<img src="https://rawcdn.githack.com/kl3jvi/animity/ffc5aab9a33604fc011f7eef5baeba7f21276a1e/app/src/main/ic_launcher-playstore.png" />&nbsp;Animity
+</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/tatsuz0u/EhPanda">
+<img src="https://user-images.githubusercontent.com/31207151/105609404-0acbff00-5de4-11eb-9e88-f3c6e0ba9d44.png" />&nbsp;EhPanda
+</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/Dar9586/NClientV2">
+<img src="https://rawcdn.githack.com/Dar9586/NClientV2/fb021eaac94a66f435e48030993bb2335e9faf71/app/src/main/ic_launcher-web.png" />&nbsp;NClientV2
+</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/LagradOst/QuickNovel">
+<img src="https://rawcdn.githack.com/LagradOst/QuickNovel/f68a17dd4e7789061149c0ab3b96d1b2fa1a2a1b/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" />&nbsp;QuickNovel
+</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/CarlosEsco/Neko">
+<img src="https://rawcdn.githack.com/CarlosEsco/Neko/9e3a5aa4c9f512574ee9f204606e4ab4f29ff440/.github/readme-images/logo.png" />&nbsp;Neko
+</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/jobobby04/TachiyomiSY/">
+<img src="https://rawcdn.githack.com/jobobby04/TachiyomiSY/76f5625948316a09ed02d422b5f22b3231a08453/app/src/main/ic_launcher-web.png" />&nbsp;TachiyomiSY
+</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/LagradOst/CloudStream-3">
+<img src="https://rawcdn.githack.com/LagradOst/CloudStream-3/7bf77cb40844157c1b614969f8bde307b6ab3413/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" />&nbsp;CloudStream
+</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/saikou-app/saikou">
+<img src="https://rawcdn.githack.com/saikou-app/saikou/9dffa23e264bf02e3078005c57629180b4a74bba/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" />&nbsp;Saikou
+</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/nv95/Kotatsu/">
+<img src="https://rawcdn.githack.com/nv95/Kotatsu/ce1c607f052ed258c3e9d524a5a0c285acb9a95a/app/src/main/res/drawable-xxxhdpi/ic_shortcut_default.png" />&nbsp;Kotatsu
+</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/vendz/Cineapp/">
+<img src="https://rawcdn.githack.com/vendz/Cineapp/066b5f1c31d99d4392c2cbeeb69afb98d4eda254/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" />&nbsp;Cineapp
+</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/StreamerApp/Streamer"><img src="https://i.ibb.co/w48m3Z7/images.jpg" />&nbsp;Streamer</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/mukul500/AnimeXStream/">
+<img src="https://rawcdn.githack.com/mukul500/AnimeXStream/4ff6a823e33fc2c555c6b7e69b816f4e487d2c84/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" />&nbsp;AnimeXStream
+</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/jmir1/aniyomi/">
+<img src="https://rawcdn.githack.com/jmir1/aniyomi/b72a24f86730d37d39be180c358ee852d0221399/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" />&nbsp;Aniyomi
+</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/Sangwan5688/BlackHole">
+<img src="https://rawcdn.githack.com/Sangwan5688/BlackHole/85c6258cec9325f87990911d919da81582ac51d8/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" />&nbsp;BlackHole
+</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/Shabinder/SpotiFlyer">
+<img src="https://rawcdn.githack.com/Shabinder/SpotiFlyer/c035596721ae1a884d86f810a6848bc925bb15fd/art/SpotiFlyer.svg" />&nbsp;SpotiFlyer
+</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/KRTirtho/spotube">
+<img src="https://rawcdn.githack.com/KRTirtho/spotube/580d7eea601214b256860788634fd28389eeab3e/assets/spotube_banner.png" />&nbsp;SpoTube
+</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://ymusic.io/"><img src="https://ymusic.io/favicons/apple-touch-icon.png" />&nbsp;Ymusic</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/avluis/Hentoid">
+<img src="https://rawcdn.githack.com/avluis/Hentoid/309b738617856d3b7bcb1d34f4a031671b0005b3/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" />&nbsp;Hentoid
+</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/gokadzev/Musify">
+<img src="https://rawcdn.githack.com/gokadzev/Musify/b4b10d27258af290c21965aee5a2c0fc81c5c693/assets/images/splash.png" />&nbsp;Musify
+</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/gsioteam/kinoko">
+<img src="https://rawcdn.githack.com/gsioteam/kinoko/bd8d3965ced75031f935d7b1c7fd3a0712135759/assets/icon.png" />&nbsp;Kinoko
+</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://github.com/xgi/houdoku"> <img src="https://rawcdn.githack.com/xgi/houdoku/5e3e40256247cfcca9d187d51b211f42f19d9d4d/assets/icon.png" />&nbsp;Houdoku </a>
+</div>
+</div>
 
-        <h4 id="Adult"> ★彡[ADULT]彡★ </h4>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://haho.moe/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg">&nbsp;Haho</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://a-hentai.tv/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg">&nbsp;A hentai</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://doujins.me/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg">&nbsp;Doujins</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://manytoon.com/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg">&nbsp;Manytoon</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://search.literotica.com/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg">&nbsp;Literotica</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://nhentai.net/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg">&nbsp;Nhentai</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://toonily.me/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg">&nbsp;Toonily</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://hanime.tv/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg">&nbsp;Hanime</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://hentaihaven.xxx/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg">&nbsp;Hentaihaven</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://animeidhentai.com/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg">&nbsp;Idhentai</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://9hentai.to/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg">&nbsp;9hentai</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://doujins.com/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg">&nbsp;Doujins</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://hentaihere.com/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg">&nbsp;Hentaihere</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://hentai2read.com/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg">&nbsp;Hentai2Read</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://comics.8muses.com/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg">&nbsp;8muses</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.tsumino.com/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg">&nbsp;Tsumino</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.fakku.net/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg">&nbsp;Fakku</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://18comic.vip/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg">&nbsp;18comic</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://eromangram.com/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg">&nbsp;Eromangram</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.cartoon18.com/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg">&nbsp;Cartoon18</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="http://raw-zip.com/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg">&nbsp;Raw Zip</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://hentai20.com/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg">&nbsp;Hentai20</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://hentaibar.com/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg">&nbsp;Hentaibar</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://hentaifreak.org/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg">&nbsp;Hentaifreak</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://manhwaclub.net/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg">&nbsp;Manhwaclub</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.toongod.com/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg">&nbsp;Toongod</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://hentaiporn.mobi/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg">&nbsp;Hentaiporn</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://dragontranslation.com/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg">&nbsp;DragonTL</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://storiesonline.net"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg">&nbsp;StoriesOnline</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://hentaimag.net/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg">&nbsp;Hentaimag</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://manga18fx.com/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg">&nbsp;Manga18fx</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.toptoon.net/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg">&nbsp;Toptoon</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://cutegirl.mobi/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg">&nbsp;CuteGirl</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.asstr.org"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg">&nbsp;Asstr</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.sexstories.com"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg">&nbsp;SexStories</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.sex4stories.com"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg">&nbsp;Sex4Stories</a></div>
-        </div>
+<h4 id="Adult">★彡[ADULT]彡★</h4>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://haho.moe/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg" />&nbsp;Haho</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://a-hentai.tv/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg" />&nbsp;A hentai</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://doujins.me/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg" />&nbsp;Doujins</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://manytoon.com/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg" />&nbsp;Manytoon</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://search.literotica.com/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg" />&nbsp;Literotica</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://nhentai.net/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg" />&nbsp;Nhentai</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://toonily.me/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg" />&nbsp;Toonily</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://hanime.tv/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg" />&nbsp;Hanime</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://hentaihaven.xxx/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg" />&nbsp;Hentaihaven</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://animeidhentai.com/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg" />&nbsp;Idhentai</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://9hentai.to/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg" />&nbsp;9hentai</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://doujins.com/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg" />&nbsp;Doujins</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://hentaihere.com/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg" />&nbsp;Hentaihere</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://hentai2read.com/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg" />&nbsp;Hentai2Read</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://comics.8muses.com/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg" />&nbsp;8muses</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.tsumino.com/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg" />&nbsp;Tsumino</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.fakku.net/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg" />&nbsp;Fakku</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://18comic.vip/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg" />&nbsp;18comic</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://eromangram.com/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg" />&nbsp;Eromangram</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.cartoon18.com/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg" />&nbsp;Cartoon18</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="http://raw-zip.com/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg" />&nbsp;Raw Zip</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://hentai20.com/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg" />&nbsp;Hentai20</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://hentaibar.com/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg" />&nbsp;Hentaibar</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://hentaifreak.org/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg" />&nbsp;Hentaifreak</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://manhwaclub.net/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg" />&nbsp;Manhwaclub</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.toongod.com/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg" />&nbsp;Toongod</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://hentaiporn.mobi/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg" />&nbsp;Hentaiporn</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://dragontranslation.com/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg" />&nbsp;DragonTL</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://storiesonline.net"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg" />&nbsp;StoriesOnline</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://hentaimag.net/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg" />&nbsp;Hentaimag</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://manga18fx.com/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg" />&nbsp;Manga18fx</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.toptoon.net/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg" />&nbsp;Toptoon</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://cutegirl.mobi/"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg" />&nbsp;CuteGirl</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.asstr.org"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg" />&nbsp;Asstr</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.sexstories.com"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg" />&nbsp;SexStories</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.sex4stories.com"><img src="https://xranks.com/static/assets2/img/screenshot_adult.svg" />&nbsp;Sex4Stories</a>
+</div>
+</div>
 
-        <h4 id="Torrent"> ★彡[TORRENT]彡★ </h4>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://1337x.to"><img src="https://img.icons8.com/dusk/256/000000/utorrent.png">&nbsp;1337x</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://yts.mx/"><img src="https://img.icons8.com/dusk/256/000000/utorrent.png">&nbsp;YTS</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://piratebay-proxylist.com/"><img src="https://img.icons8.com/dusk/256/000000/utorrent.png">&nbsp;Thepiratebay</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://rarbg.torrentsbay.org"><img src="https://img.icons8.com/dusk/256/000000/utorrent.png">&nbsp;Rarbg</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://torlock.com"><img src="https://img.icons8.com/dusk/256/000000/utorrent.png">&nbsp;Torlock</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="http://rutor.is"><img src="https://img.icons8.com/dusk/256/000000/utorrent.png">&nbsp;Rutor</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://torrentgalaxy.to/"><img src="https://img.icons8.com/dusk/256/000000/utorrent.png">&nbsp;Torrentgalaxy</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://nyaa.si/"><img src="https://img.icons8.com/dusk/256/000000/utorrent.png">&nbsp;Nyaa</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://limetorrent.ws"><img src="https://img.icons8.com/dusk/256/000000/utorrent.png">&nbsp;Limetorrentx</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://extratorrent.st"><img src="https://img.icons8.com/dusk/256/000000/utorrent.png">&nbsp;Extratorrent</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.torrentdownloads.pro"><img src="https://img.icons8.com/dusk/256/000000/utorrent.png">&nbsp;Torrentdownloads</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://gtdb.cc/"><img src="https://img.icons8.com/dusk/256/000000/utorrent.png">&nbsp;GTDB</a></div>
-        </div>
-        <div class="row">
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://ext.to/"><img src="https://img.icons8.com/dusk/256/000000/utorrent.png">&nbsp;Ext</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://eztv.re/"><img src="https://img.icons8.com/dusk/256/000000/utorrent.png">&nbsp;Eztv</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://thekickasstorrents.to/"><img src="https://img.icons8.com/dusk/256/000000/utorrent.png">&nbsp;Kickasstorrents</a></div>
-          <div class="col-md-3"><a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://demonoid.torrentbay.to/"><img src="https://img.icons8.com/dusk/256/000000/utorrent.png">&nbsp;Demonoid</a></div>
-        </div>
-          <div class=footer>Made with love by <a href="https://github.com/OshekharO" title="Dev" target="_blank"> σѕнєкнєяσ</a></div>Hosted On InfinityFree
-      </div>
-    </div> <!--Container-->
+<h4 id="Torrent">★彡[TORRENT]彡★</h4>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://1337x.to"><img src="https://img.icons8.com/dusk/256/000000/utorrent.png" />&nbsp;1337x</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://yts.mx/"><img src="https://img.icons8.com/dusk/256/000000/utorrent.png" />&nbsp;YTS</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://piratebay-proxylist.com/"><img src="https://img.icons8.com/dusk/256/000000/utorrent.png" />&nbsp;Thepiratebay</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://rarbg.torrentsbay.org"><img src="https://img.icons8.com/dusk/256/000000/utorrent.png" />&nbsp;Rarbg</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://torlock.com"><img src="https://img.icons8.com/dusk/256/000000/utorrent.png" />&nbsp;Torlock</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="http://rutor.is"><img src="https://img.icons8.com/dusk/256/000000/utorrent.png" />&nbsp;Rutor</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://torrentgalaxy.to/"><img src="https://img.icons8.com/dusk/256/000000/utorrent.png" />&nbsp;Torrentgalaxy</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://nyaa.si/"><img src="https://img.icons8.com/dusk/256/000000/utorrent.png" />&nbsp;Nyaa</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://limetorrent.ws"><img src="https://img.icons8.com/dusk/256/000000/utorrent.png" />&nbsp;Limetorrentx</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://extratorrent.st"><img src="https://img.icons8.com/dusk/256/000000/utorrent.png" />&nbsp;Extratorrent</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://www.torrentdownloads.pro"><img src="https://img.icons8.com/dusk/256/000000/utorrent.png" />&nbsp;Torrentdownloads</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://gtdb.cc/"><img src="https://img.icons8.com/dusk/256/000000/utorrent.png" />&nbsp;GTDB</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://ext.to/"><img src="https://img.icons8.com/dusk/256/000000/utorrent.png" />&nbsp;Ext</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://eztv.re/"><img src="https://img.icons8.com/dusk/256/000000/utorrent.png" />&nbsp;Eztv</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://thekickasstorrents.to/"><img src="https://img.icons8.com/dusk/256/000000/utorrent.png" />&nbsp;Kickasstorrents</a>
+</div>
+<div class="col-md-3">
+<a class="btn btn-default btn-lg btn-block" role="button" target="_blank" href="https://demonoid.torrentbay.to/"><img src="https://img.icons8.com/dusk/256/000000/utorrent.png" />&nbsp;Demonoid</a>
+</div>
+</div>
+<div class="footer">Made with love by <a href="https://github.com/OshekharO" title="Dev" target="_blank"> σѕнєкнєяσ</a></div>
+Hosted On InfinityFree
+</div>
+</div>
+<!--Container-->
 <script
-  src="https://cdn.jsdelivr.net/gh/tuhinpal/contact-form@master/src/contact-form.min.js"
-  id="contactform"
-  error_text="Error Message Not Sent"
-  success_text="Message Sent Successfully"
-  disable_waittime="true"
-  form_worker_url="https://gen.oshekher.workers.dev/"
+src="https://cdn.jsdelivr.net/gh/tuhinpal/contact-form@master/src/contact-form.min.js"
+id="contactform"
+error_text="Error Message Not Sent"
+success_text="Message Sent Successfully"
+disable_waittime="true"
+form_worker_url="https://gen.oshekher.workers.dev/"
 ></script>
-    <div class="pattern"></div>
-  </body>
+<div class="pattern"></div>
+</body>
 </html>
