@@ -1,20 +1,33 @@
-## Entertainment Index
+# 🎬 Entertainment Index
 
-Get recommended site's to watch / read movie, series, Anime, Manga, light Novel, Etc. Also Some Application To browse these contents.
+A comprehensive index of entertainment resources including movies, anime, manga, novels, apps, and more.
 
-## 🚸 Warnings :
+## 🌟 Features
 
-- This is Just For Educational Purpose
-- DO NOT Sell this Script, This is 💯% Free
+- **Modern Interface**: Built with Bootstrap 5.3.2 with dark mode support
+- **7 Main Categories**:
+  - 🎥 Movies & Series
+  - 🎌 Anime
+  - 📚 Manga
+  - 📖 Novels
+  - 📱 Applications
+  - 🔞 Adult Content
+  - 🧲 Torrents
+- **Clean Design**: Minimalist interface with smooth animations
+- **Responsive**: Works perfectly on all device sizes
+- **Quick Navigation**: Sticky category jump menu
+- **Safe Browsing**: All links open in new tabs
 
-## 🤗 Meet Me :
+## 🤝 Contributing
 
-• 😪 check you did all things perfectly before contacting [ Warning ] <br>
+1. Check for existing duplicates before adding new entries
+2. Verify links are working and up-to-date
+3. Maintain consistent formatting
 
-• For any Support About Script contact [@OshekherO](https://t.me/OshekherO) at Telegram <br>
+## 🙏 Acknowledgments
 
----
-<h4 align='center'>© 2025 ツ ѕнєкнєя</h4>
+-  Bootstrap Team for the awesome framework
+-  All content providers listed in the index
+-  GitHub for hosting
 
-<!-- DO NOT REMOVE THIS CREDIT 🤬 🤬 -->
-
+**Disclaimer**: This project is for educational purposes only. We do not host or endorse any content listed. Always respect copyright laws in your region.
